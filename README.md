@@ -35,6 +35,26 @@ Action Model generates actions given the text instruction and image observations
 | Input: Open the middle drawer of the cabinet. | Input: Pick up the alphabet soup and place it in the basket. | Input: Pick up the black bowl between the plate and the ramekin and place it on the plate. |
 <br>
 
+<table>
+  <tr>
+    <td width="300">
+      <img src="worldvla/assets/action_model_open_the_middle_drawer_of_the_cabinet.gif" width="100%">
+    </td>
+    <td width="300">
+      <img src="worldvla/assets/action_model_pick_up_the_alphabet_soup_and_place_it_in_the_bask.gif" width="100%">
+    </td>
+    <td width="300">
+      <img src="worldvla/assets/action_model_pick_up_the_black_bowl_between_the_plate_and_the_r.gif" width="100%">
+    </td>
+  </tr>
+  <tr>
+    <td><center>Input: Open the middle drawer of the cabinet.</center></td>
+    <td><center>Input: Pick up the alphabet soup and place it in the basket.</center></td>
+    <td><center>Input: Pick up the black bowl between the plate and the ramekin and place it on the plate.</center></td>
+  </tr>
+</table>
+
+
 ### World Model Results (Action + Image -> Image)
 World Model generates the next frame given the current frame and action control.
 
