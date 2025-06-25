@@ -47,7 +47,6 @@ Action Model generates actions given the text instruction and image observations
     <td><center>Input: Pick up the black bowl between the plate and the ramekin and place it on the plate.</center></td>
   </tr>
 </table>
-<br>
 
 ### World Model Results (Action + Image -> Image)
 World Model generates the next frame given the current frame and action control.
@@ -76,8 +75,6 @@ World Model generates the next frame given the current frame and action control.
     </td>
   </tr>
 </table>
-
-<br>
 
 ## 🛠️ Requirements and Installation
 ```
