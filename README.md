@@ -2,14 +2,14 @@
     <img src="worldvla/assets/logo.png?raw=true" width="80" style="margin-bottom: 0.1;"/>
 <p>
 
-<h3 align="center"><a href="" style="color:#9C276A">
+<h3 align="center"><a href="https://arxiv.org/pdf/2506.21539" style="color:#9C276A">
 WorldVLA: Towards Autoregressive Action World Model</a></h3>
 <h5 align="center"> If our project helps you, please give us a star ⭐ on GitHub to support us. 🙏🙏 </h2>
 
 
 <h5 align="center">
 
-[![arXiv](https://img.shields.io/badge/Arxiv-2501.13106-AD1C18.svg?logo=arXiv)]() 
+[![arXiv](https://img.shields.io/badge/Arxiv-2506.21539-AD1C18.svg?logo=arXiv)](https://arxiv.org/pdf/2506.21539) 
 [![hf_checkpoint](https://img.shields.io/badge/🤗-Checkpoints-9C276A.svg)](https://huggingface.co/collections/jcenaa/worldvla-685b9df63bdfe8cb67cc71b2)
 [![License](https://img.shields.io/badge/License-Apache%202.0-yellow)](./LICENSE) 
 </h5>
