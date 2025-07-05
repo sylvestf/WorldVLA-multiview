@@ -10,7 +10,7 @@ WorldVLA: Towards Autoregressive Action World Model</a></h3>
 <h5 align="center">
 
 [![arXiv](https://img.shields.io/badge/Arxiv-2506.21539-AD1C18.svg?logo=arXiv)](https://arxiv.org/pdf/2506.21539) 
-[![hf_checkpoint](https://img.shields.io/badge/🤗-Checkpoints-9C276A.svg)](https://huggingface.co/collections/jcenaa/worldvla-685b9df63bdfe8cb67cc71b2)
+[![hf_checkpoint](https://img.shields.io/badge/🤗-Checkpoints-9C276A.svg)](https://huggingface.co/Alibaba-DAMO-Academy/WorldVLA)
 [![License](https://img.shields.io/badge/License-Apache%202.0-yellow)](./LICENSE) 
 </h5>
 
@@ -88,18 +88,18 @@ pip install -e .
 
 | Model (256 * 256)    |    HF Link        |    Success Rate (%)     |
 | :--------------------: | :------------------------------------------------------------: | :--------------------: |
-| LIBERO-Spatial       | [jcenaa/WorldVLA-ActionModel-LIBERO-Spatial-256](https://huggingface.co/jcenaa/WorldVLA-ActionModel-LIBERO-Spatial-256/tree/main) | 85.6 |
-| LIBERO-Object       | [jcenaa/WorldVLA-ActionModel-LIBERO-Object-256](https://huggingface.co/jcenaa/WorldVLA-ActionModel-LIBERO-Object-256/tree/main) | 89.0 |
-| LIBERO-Goal | [jcenaa/WorldVLA-ActionModel-LIBERO-Goal-256](https://huggingface.co/jcenaa/WorldVLA-ActionModel-LIBERO-Goal-256/tree/main) | 82.6 |
-| LIBERO-Long | [jcenaa/WorldVLA-ActionModel-LIBERO-10-256](https://huggingface.co/jcenaa/WorldVLA-ActionModel-LIBERO-10-256/tree/main) | 59.0 |
+| LIBERO-Spatial       | [Alibaba-DAMO-Academy/WorldVLA/model_256/libero_spatial](https://huggingface.co/Alibaba-DAMO-Academy/WorldVLA/tree/main/model_256/libero_spatial) | 85.6 |
+| LIBERO-Object       | [Alibaba-DAMO-Academy/WorldVLA/model_256/libero_object](https://huggingface.co/Alibaba-DAMO-Academy/WorldVLA/tree/main/model_256/libero_object) | 89.0 |
+| LIBERO-Goal | [Alibaba-DAMO-Academy/WorldVLA/model_256/libero_goal](https://huggingface.co/Alibaba-DAMO-Academy/WorldVLA/tree/main/model_256/libero_goal) | 82.6 |
+| LIBERO-Long | [Alibaba-DAMO-Academy/WorldVLA/model_256/libero_10](https://huggingface.co/Alibaba-DAMO-Academy/WorldVLA/tree/main/model_256/libero_10) | 59.0 |
 <br>
 
 | Model (512 * 512)    |    HF Link        |    Success Rate (%)     |
 | :--------------------: | :------------------------------------------------------------: | :--------------------: |
-| LIBERO-Spatial       | [jcenaa/WorldVLA-ActionModel-LIBERO-Spatial-512](https://huggingface.co/jcenaa/WorldVLA-ActionModel-LIBERO-Spatial-512/tree/main) | 87.6 |
-| LIBERO-Object       | [jcenaa/WorldVLA-ActionModel-LIBERO-Object-512](https://huggingface.co/jcenaa/WorldVLA-ActionModel-LIBERO-Object-512/tree/main) | 96.2 |
-| LIBERO-Goal | [jcenaa/WorldVLA-ActionModel-LIBERO-Goal-512](https://huggingface.co/jcenaa/WorldVLA-ActionModel-LIBERO-Goal-512/tree/main) | 83.4 |
-| LIBERO-Long | [jcenaa/WorldVLA-ActionModel-LIBERO-10-512](https://huggingface.co/jcenaa/WorldVLA-ActionModel-LIBERO-10-512/tree/main) | 60.0 |
+| LIBERO-Spatial       | [Alibaba-DAMO-Academy/WorldVLA/model_512/libero_spatial](https://huggingface.co/Alibaba-DAMO-Academy/WorldVLA/tree/main/model_512/libero_spatial) | 87.6 |
+| LIBERO-Object       | [Alibaba-DAMO-Academy/WorldVLA/model_512/libero_object](https://huggingface.co/Alibaba-DAMO-Academy/WorldVLA/tree/main/model_512/libero_object) | 96.2 |
+| LIBERO-Goal | [Alibaba-DAMO-Academy/WorldVLA/model_512/libero_goal](https://huggingface.co/Alibaba-DAMO-Academy/WorldVLA/tree/main/model_512/libero_goal) | 83.4 |
+| LIBERO-Long | [Alibaba-DAMO-Academy/WorldVLA/model_512/libero_10](https://huggingface.co/Alibaba-DAMO-Academy/WorldVLA/tree/main/model_512/libero_10) | 60.0 |
 
 
 ## 🗝️ Training
