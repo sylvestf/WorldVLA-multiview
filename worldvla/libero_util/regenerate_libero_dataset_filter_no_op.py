@@ -127,6 +127,13 @@ def main(args):
             joint_states = []
             robot_states = []
             agentview_images = []
+            agentview_30 = []
+            agentview_60 = []
+            agentview_120 = []
+            agentview_180 = []
+            agentview_240 = []
+            agentview_300 = []
+            agentview_330 = []
             eye_in_hand_images = []
             
             # Replay original demo actions in environment and record observations
@@ -166,6 +173,13 @@ def main(args):
                     )
                 )
                 agentview_images.append(obs["agentview_image"])
+                agentview_30.append(obs["agentview_30_image"])
+                agentview_60.append(obs["agentview_60_image"])
+                agentview_120.append(obs["agentview_120_image"])
+                agentview_180.append(obs["agentview_180_image"])
+                agentview_240.append(obs["agentview_240_image"])
+                agentview_300.append(obs["agentview_300_image"])
+                agentview_330.append(obs["agentview_330_image"])
                 eye_in_hand_images.append(obs["robot0_eye_in_hand_image"])
 
                 # Execute demo action in environment
@@ -178,6 +192,13 @@ def main(args):
                 rewards = np.zeros(len(actions)).astype(np.uint8)
                 rewards[-1] = 1
                 assert len(actions) == len(agentview_images)
+                assert len(actions) == len(agentview_30)
+                assert len(actions) == len(agentview_60)
+                assert len(actions) == len(agentview_120)
+                assert len(actions) == len(agentview_180)
+                assert len(actions) == len(agentview_240)
+                assert len(actions) == len(agentview_300)
+                assert len(actions) == len(agentview_330)
 
                 ep_data_grp = grp.create_group(f"demo_{i}")
                 obs_grp = ep_data_grp.create_group("obs")
@@ -187,6 +208,13 @@ def main(args):
                 obs_grp.create_dataset("ee_pos", data=np.stack(ee_states, axis=0)[:, :3])
                 obs_grp.create_dataset("ee_ori", data=np.stack(ee_states, axis=0)[:, 3:])
                 obs_grp.create_dataset("agentview_rgb", data=np.stack(agentview_images, axis=0))
+                obs_grp.create_dataset("agentview_30_rgb", data=np.stack(agentview_30, axis=0))
+                obs_grp.create_dataset("agentview_60_rgb", data=np.stack(agentview_60, axis=0))
+                obs_grp.create_dataset("agentview_120_rgb", data=np.stack(agentview_120, axis=0))
+                obs_grp.create_dataset("agentview_180_rgb", data=np.stack(agentview_180, axis=0))
+                obs_grp.create_dataset("agentview_240_rgb", data=np.stack(agentview_240, axis=0))
+                obs_grp.create_dataset("agentview_300_rgb", data=np.stack(agentview_300, axis=0))
+                obs_grp.create_dataset("agentview_330_rgb", data=np.stack(agentview_330, axis=0))
                 obs_grp.create_dataset("eye_in_hand_rgb", data=np.stack(eye_in_hand_images, axis=0))
                 ep_data_grp.create_dataset("actions", data=actions)
                 ep_data_grp.create_dataset("states", data=np.stack(states))

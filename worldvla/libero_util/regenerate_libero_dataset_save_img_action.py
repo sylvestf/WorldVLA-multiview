@@ -92,6 +92,13 @@ def main(args):
                 continue
             orig_actions = demo_data["actions"][()]
             orig_rgb = demo_data['obs']['agentview_rgb'][()]
+            orig_rgb_30 = demo_data['obs']['agentview_30_rgb'][()]
+            orig_rgb_60 = demo_data['obs']['agentview_60_rgb'][()]
+            orig_rgb_120 = demo_data['obs']['agentview_120_rgb'][()]
+            orig_rgb_180 = demo_data['obs']['agentview_180_rgb'][()]
+            orig_rgb_240 = demo_data['obs']['agentview_240_rgb'][()]
+            orig_rgb_300 = demo_data['obs']['agentview_300_rgb'][()]
+            orig_rgb_330 = demo_data['obs']['agentview_330_rgb'][()]
             
             cur_trial_dir = os.path.join(cur_task_dir, f"trj_{i}")
             action_dir = os.path.join(cur_trial_dir, 'action')
@@ -110,6 +117,62 @@ def main(args):
                     rgb = rgb.astype(np.uint8)
                 rgb_image = Image.fromarray(rgb)
                 rgb_filename = os.path.join(img_dir, f"image_{j}.png")
+                rgb_image.save(rgb_filename)
+
+                rgb = orig_rgb_30[j][::-1, ::-1]
+                # 确保 RGB 数组的数据类型为 uint8
+                if rgb.dtype != np.uint8:
+                    rgb = rgb.astype(np.uint8)
+                rgb_image = Image.fromarray(rgb)
+                rgb_filename = os.path.join(img_dir, f"image_30_{j}.png")
+                rgb_image.save(rgb_filename)
+
+                rgb = orig_rgb_60[j][::-1, ::-1]
+                # 确保 RGB 数组的数据类型为 uint8
+                if rgb.dtype != np.uint8:
+                    rgb = rgb.astype(np.uint8)
+                rgb_image = Image.fromarray(rgb)
+                rgb_filename = os.path.join(img_dir, f"image_60_{j}.png")
+                rgb_image.save(rgb_filename)
+
+                rgb = orig_rgb_120[j][::-1, ::-1]
+                # 确保 RGB 数组的数据类型为 uint8
+                if rgb.dtype != np.uint8:
+                    rgb = rgb.astype(np.uint8)
+                rgb_image = Image.fromarray(rgb)
+                rgb_filename = os.path.join(img_dir, f"image_120_{j}.png")
+                rgb_image.save(rgb_filename)
+
+                rgb = orig_rgb_180[j][::-1, ::-1]
+                # 确保 RGB 数组的数据类型为 uint8
+                if rgb.dtype != np.uint8:
+                    rgb = rgb.astype(np.uint8)
+                rgb_image = Image.fromarray(rgb)
+                rgb_filename = os.path.join(img_dir, f"image_180_{j}.png")
+                rgb_image.save(rgb_filename)
+
+                rgb = orig_rgb_240[j][::-1, ::-1]
+                # 确保 RGB 数组的数据类型为 uint8
+                if rgb.dtype != np.uint8:
+                    rgb = rgb.astype(np.uint8)
+                rgb_image = Image.fromarray(rgb)
+                rgb_filename = os.path.join(img_dir, f"image_240_{j}.png")
+                rgb_image.save(rgb_filename)
+
+                rgb = orig_rgb_300[j][::-1, ::-1]
+                # 确保 RGB 数组的数据类型为 uint8
+                if rgb.dtype != np.uint8:
+                    rgb = rgb.astype(np.uint8)
+                rgb_image = Image.fromarray(rgb)
+                rgb_filename = os.path.join(img_dir, f"image_300_{j}.png")
+                rgb_image.save(rgb_filename)
+
+                rgb = orig_rgb_330[j][::-1, ::-1]
+                # 确保 RGB 数组的数据类型为 uint8
+                if rgb.dtype != np.uint8:
+                    rgb = rgb.astype(np.uint8)
+                rgb_image = Image.fromarray(rgb)
+                rgb_filename = os.path.join(img_dir, f"image_330_{j}.png")
                 rgb_image.save(rgb_filename)
 
 
